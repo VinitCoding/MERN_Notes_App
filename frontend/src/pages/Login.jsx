@@ -16,7 +16,7 @@ const Login = () => {
   return (
     <>
       <Navbar />
-      <div className='flex justify-center items-center mt-32'>
+      <div className='flex items-center justify-center mt-32'>
         <div className='border-[1.5px] rounded px-8 py-11 w-96 shadow'>
           <form onSubmit={handleLogin} >
           <h1 className='text-2xl font-medium'>Login</h1>
@@ -24,12 +24,12 @@ const Login = () => {
           <div className='flex flex-col mt-8'>
             <input type="email" placeholder='Email' className='input-box focus:outline-none' value={email} onChange={(e) =>setEmail(e.target.value)}/>
             <PasswordInput placeholder={'Password'} value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <button className='bg-primary text-white text-lg px-3 py-1 mt-5 rounded-sm'>Login</button>
+            <button className='px-3 py-1 mt-5 text-lg text-white rounded-sm bg-primary'>Login</button>
           </div>
 
-          <div className='flex gap-x-2 mt-5'>
+          <div className='flex mt-5 gap-x-2'>
             <p>Not registered yet?</p>
-            <Link to='/signUp' className='font-medium text-primary underline'>Create an account</Link>
+            <Link to='/signUp' className='font-medium underline text-primary'>Create an account</Link>
           </div>
         </form>
 
