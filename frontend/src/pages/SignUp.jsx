@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import PasswordInput from '../components/PasswordInput'
 import { Link } from 'react-router-dom'
-import { emailValidator } from '../utils/email_validator'
+import { emailValidator } from '../utils/helper.js'
 
 const SignUp = () => {
   const [name, setName] = useState('')
